@@ -18,6 +18,7 @@ const Skills = () => {
           </button>
         ))}
       </div>
+      <h1>BOBO KA LEAN TRISSA AREVALO</h1>
     </div>
   );
 };
