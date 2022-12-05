@@ -33,6 +33,10 @@
       margin: 20px;
       transition: .35s ease-in-out;
       cursor: pointer;
+      &.active {
+        background-color: black;
+        color: white;
+      }
       &:hover {
         background-color: black;
         color: white;
@@ -41,26 +45,26 @@
   }
   .skills__tab {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     place-items: center;
-    place-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    margin: 0 500px;
-    gap: 10px;
+    margin: 0 300px;
     .skills__tab__list {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5);
+      box-shadow:  0 4px 6px -1px rgba(0,0,0,.1);
       border-radius: 5px;
-      width: 150px;
-      height: 150px;
+      width: 200px;
+      height: 200px;
       img {
         width: 90px;
       }
       span {
         position: absolute;
+        font-size: 20px;
+        font-weight: 100;
         bottom: 0;
       }
     }

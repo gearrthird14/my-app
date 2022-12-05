@@ -8,8 +8,8 @@ import { NAV_TITLE } from "../../api/API";
 // react-scroll
 import { Link } from "react-scroll";
 
-const TopNav = (GlobalState: GlobalState, refprop: any) => {
-  const { isShow, setShow, isActive, setIsActive } = GlobalState;
+const TopNav = (GlobalState: GlobalState) => {
+  const { isShow, setShow } = GlobalState as GlobalState;
 
   const transitionNav = () => {
     if (window.scrollY > 100) {

@@ -26,18 +26,18 @@ import { FaPassport } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
 export const SKILLS__TAB = [
-  { name: "Firebase", img: Firebase },
-  { name: "HTML5", img: HTML5 },
-  { name: "SASS", img: SASS },
-  { name: "CSS3", img: CSS3 },
-  { name: "Redux", img: Redux },
-  { name: "ReactJS", img: ReactJS },
-  { name: "GIT", img: GIT },
-  { name: "GitHub", img: GitHub },
-  { name: "Javascript", img: Javascript },
-  { name: "Typescript", img: Typescript },
-  { name: "Framer Motion", img: FramerMotion },
-  { name: "Jenkins", img: Jenkins },
+  { name: "Firebase", img: Firebase, id: "0" },
+  { name: "HTML5", img: HTML5, id: "1" },
+  { name: "SASS", img: SASS, id: "1" },
+  { name: "CSS3", img: CSS3, id: "1" },
+  { name: "Redux", img: Redux, id: "1" },
+  { name: "React JS", img: ReactJS, id: "1" },
+  { name: "GIT", img: GIT, id: "2" },
+  { name: "GitHub", img: GitHub, id: "2" },
+  { name: "Javascript", img: Javascript, id: "1" },
+  { name: "Typescript", img: Typescript, id: "1" },
+  { name: "Framer Motion", img: FramerMotion, id: "1" },
+  { name: "Jenkins", img: Jenkins, id: "2" },
 ];
 
 export const PROFILE_CONTENT = [
@@ -78,8 +78,8 @@ export const ABOUT__PROFILE = [
 ];
 
 export const SKILLS__BUTTON = [
-  { btn: "All" },
-  { btn: "FRONT-END" },
-  { btn: "LIBRARY" },
-  { btn: "BACK-END" },
+  { btn: "All", id: '0' },
+  { btn: "FRONT-END", id: '1' },
+  { btn: "BACK-END", id: '2' },
+  { btn: "OTHERS", id: '3' },
 ];
