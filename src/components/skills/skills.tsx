@@ -1,6 +1,7 @@
 import React from "react";
 // API
 import { SKILLS__BUTTON } from "../../api/API";
+import { SKILLS__TAB } from "../../api/API";
 // Styles
 import styles from "./skills.module.scss";
 
@@ -13,12 +14,17 @@ const Skills = () => {
       </div>
       <div className={styles.skills__btn_wrapper}>
         {SKILLS__BUTTON.map((button) => (
-          <button className={styles.skills__btn}>
-            {button.btn}
-          </button>
+          <button className={styles.skills__btn}>{button.btn}</button>
         ))}
       </div>
-      <h1>BOBO KA LEAN TRISSA AREVALO</h1>
+      <div className={styles.skills__tab}>
+        {SKILLS__TAB.map((tab, index) => (
+          <div className={styles.skills__tab__list}>
+            <img src={tab.img} alt={tab.name} />
+            <span>{tab.name}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

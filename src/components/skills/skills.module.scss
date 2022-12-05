@@ -21,6 +21,7 @@
   }
   .skills__btn_wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     .skills__btn {
@@ -29,12 +30,38 @@
       height: 40px;
       border: none;
       border-radius: 5px;
-      margin: 0 20px 0 0;
+      margin: 20px;
       transition: .35s ease-in-out;
       cursor: pointer;
       &:hover {
         background-color: black;
         color: white;
+      }
+    }
+  }
+  .skills__tab {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    margin: 0 500px;
+    gap: 10px;
+    .skills__tab__list {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .5);
+      border-radius: 5px;
+      width: 150px;
+      height: 150px;
+      img {
+        width: 90px;
+      }
+      span {
+        position: absolute;
+        bottom: 0;
       }
     }
   }
