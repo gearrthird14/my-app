@@ -1,0 +1,48 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 50px ;
+  transition: all 1s ease-in-out;
+  color: var(--primary_grey);
+  &.nav__black {
+    background: var( --primary_black);
+  }
+  .nav_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    .nav__Logo {
+      font-size: 40px;
+      font-weight: 700;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      cursor: pointer;
+    }
+    .nav__tabsWrapper {
+      display: flex;
+      align-items: center;
+      .active {
+        color: var(--primary_white);
+      }
+      .nav__tabs {
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0 0 0 20px;
+        cursor: pointer;
+        transition: .35s ease;
+        &:hover {
+          color: var(--primary_white);
+        }
+      }
+    }
+  }
+}
