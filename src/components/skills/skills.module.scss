@@ -45,17 +45,21 @@
   }
   .skills__tab {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     place-items: center;
-    margin: 0 300px;
+    padding: 20px 200px;
+    gap: 20px;
     .skills__tab__list {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      box-shadow:  0 4px 6px -1px rgba(0,0,0,.1);
+      background: rgb(240, 240 ,240);
+      box-shadow:  0 4px 6px -1px rgba(0,0,0,.5);
       border-radius: 5px;
+      margin: 10px 0;
       width: 200px;
       height: 200px;
       img {

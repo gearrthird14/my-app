@@ -33,10 +33,10 @@ const TopNav = (GlobalState: GlobalState) => {
             <Link
               to={navigation.title}
               activeClass={styles.active}
+              duration={100}
               spy={true}
               smooth={true}
               offset={navigation.offset}
-              duration={1000}
               key={index}
               className={styles.nav__tabs}
             >

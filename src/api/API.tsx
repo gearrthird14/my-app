@@ -26,18 +26,18 @@ import { FaPassport } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
 export const SKILLS__TAB = [
-  { name: "Firebase", img: Firebase, id: "0" },
-  { name: "HTML5", img: HTML5, id: "1" },
-  { name: "SASS", img: SASS, id: "1" },
-  { name: "CSS3", img: CSS3, id: "1" },
-  { name: "Redux", img: Redux, id: "1" },
-  { name: "React JS", img: ReactJS, id: "1" },
-  { name: "GIT", img: GIT, id: "2" },
-  { name: "GitHub", img: GitHub, id: "2" },
-  { name: "Javascript", img: Javascript, id: "1" },
-  { name: "Typescript", img: Typescript, id: "1" },
-  { name: "Framer Motion", img: FramerMotion, id: "1" },
-  { name: "Jenkins", img: Jenkins, id: "2" },
+  { name: "HTML5", img: HTML5, id: "2", category: 'frontend' },
+  { name: "SASS", img: SASS, id: "3", category: 'frontend' },
+  { name: "CSS3", img: CSS3, id: "4", category: 'frontend' },
+  { name: "Redux", img: Redux, id: "5", category: 'frontend' },
+  { name: "React JS", img: ReactJS, id: "6", category: 'frontend' },
+  { name: "GIT", img: GIT, id: "7", category: 'others' },
+  { name: "GitHub", img: GitHub, id: "8", category: 'others' },
+  { name: "Firebase", img: Firebase, id: "1", category: 'backend' },
+  { name: "Javascript", img: Javascript, id: "9", category: 'frontend' },
+  { name: "Typescript", img: Typescript, id: "10", category: 'frontend' },
+  { name: "Framer Motion", img: FramerMotion, id: "11", category: 'frontend' },
+  { name: "Jenkins", img: Jenkins, id: "12", category: 'others' },
 ];
 
 export const PROFILE_CONTENT = [
@@ -49,7 +49,7 @@ export const PROFILE_CONTENT = [
 export const NAV_TITLE = [
   { title: "Home", links: "/", offset: -100 },
   { title: "Profile", links: "/", offset: -135 },
-  { title: "Skills", links: "/", offset: -70 },
+  { title: "Skills", links: "/", offset: -130 },
   { title: "Contact", links: "/", offset: -100 },
 ];
 
@@ -78,8 +78,8 @@ export const ABOUT__PROFILE = [
 ];
 
 export const SKILLS__BUTTON = [
-  { btn: "All", id: '0' },
-  { btn: "FRONT-END", id: '1' },
-  { btn: "BACK-END", id: '2' },
-  { btn: "OTHERS", id: '3' },
+  { btn: "All", id: "0" },
+  { btn: "FRONT-END", id: "1" },
+  { btn: "BACK-END", id: "2" },
+  { btn: "OTHERS", id: "3" },
 ];
